@@ -1,36 +1,31 @@
-
 <template>
-<section>
-  <ValueCounter :value="value" />
-
-  <button
-    class="btn btn-primary"
-    @click="increment">
-    increment
-  </button>
+<section id="my-section">
+  <h4 class="h4 text-center">Lifecycles</h4>
 </section>
 </template>
 
 <script>
-import ValueCounter from '@/components/ValueCounter'
-
 export default {
   name: 'Home',
 
-  components: {
-    ValueCounter
-  },
+  setup () {
+    const mySection = document.getElementById('my-section')
 
-  data () {
-    return {
-      value: 0
-    }
-  },
-
-  methods: {
-    increment () {
-      this.value++
-    }
+    console.log('mySection', mySection)
   }
 }
+
+/**
+ *  beforeCreate -> use setup()
+    created -> use setup()
+    beforeMount -> onBeforeMount
+    mounted -> onMounted
+    beforeUpdate -> onBeforeUpdate
+    updated -> onUpdated
+    beforeDestroy -> onBeforeUnmount
+    destroyed -> onUnmounted
+    activated -> onActivated
+    deactivated -> onDeactivated
+    errorCaptured -> onErrorCaptured
+ */
 </script>
