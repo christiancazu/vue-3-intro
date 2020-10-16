@@ -16,8 +16,13 @@ export default {
 }
 
 /**
- * provide
- * inject
- * use store as composable function
+ * multiple nodes
+ *
+ * <script setup>
+ *
+ * <style vars="{ size }">
+ * .class {
+ *    font-size: var(--size);
+ * }
  */
 </script>
