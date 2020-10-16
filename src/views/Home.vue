@@ -1,6 +1,15 @@
 <template>
-<section id="my-section">
-  <h4 class="h4 text-center">Lifecycles</h4>
+<section class="p-4">
+  <h4 class="h4 text-center">Ref vs Reactive</h4>
+
+  <div>{{ value }}</div>
+
+  <button
+    class="btn btn-primary"
+    @click="increment"
+  >
+    increment
+  </button>
 </section>
 </template>
 
@@ -8,24 +17,26 @@
 export default {
   name: 'Home',
 
-  setup () {
-    const mySection = document.getElementById('my-section')
+  data () {
+    return {
+      value: 0
+    }
+  },
 
-    console.log('mySection', mySection)
+  setup () {
+  },
+
+  methods: {
+    increment () {
+      this.value++
+    }
   }
 }
 
 /**
- *  beforeCreate -> use setup()
-    created -> use setup()
-    beforeMount -> onBeforeMount
-    mounted -> onMounted
-    beforeUpdate -> onBeforeUpdate
-    updated -> onUpdated
-    beforeDestroy -> onBeforeUnmount
-    destroyed -> onUnmounted
-    activated -> onActivated
-    deactivated -> onDeactivated
-    errorCaptured -> onErrorCaptured
+ * ref (unwrap)
+ * reactive (destructuring)
+ * toRefs
+ * toRef
  */
 </script>

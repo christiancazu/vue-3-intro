@@ -10,6 +10,7 @@
 
 <style lang="scss" scoped>
 main {
+  font-size: 2rem;
   min-height: 100vh;
   background-color: whitesmoke;
 }
