@@ -1,28 +1,16 @@
 <template>
 <section class="p-4">
-  <h4 class="h4 text-center">Provide & Inject</h4>
-
-  <input class="form-control">
-
+  <h4 class="h4 text-center">Vue 3</h4>
 </section>
 </template>
 
-<script>
-export default {
-  name: 'Home',
+<script setup>
 
-  setup () {
-  }
-}
 
 /**
  * multiple nodes
- *
- * <script setup>
- *
- * <style vars="{ size }">
- * .class {
- *    font-size: var(--size);
- * }
  */
 </script>
+
+<style vars>
+</style>

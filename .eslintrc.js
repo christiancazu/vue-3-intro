@@ -4,7 +4,7 @@ module.exports = {
     node: true
   },
   'extends': [
-    'plugin:vue/vue3-essential',
+    'plugin:vue/vue3-recommended',
     'eslint:recommended'
   ],
   parserOptions: {
@@ -37,11 +37,12 @@ module.exports = {
     'no-trailing-spaces': 'warn',
     'no-empty': ['warn', { 'allowEmptyCatch': true } ],
     'key-spacing': ['warn', { 'afterColon': true } ],
-    'eol-last': ['warn', 'always'],
-    'object-curly-spacing': ['warn', 'always'],
+    'eol-last': ['warn', 'always' ],
+    'object-curly-spacing': ['warn', 'always' ],
     'object-curly-newline': 'warn',
     'no-multi-spaces': 'warn',
-    'comma-dangle': ['warn', 'never'],
+    'comma-dangle': ['warn', 'never' ],
+    semi: ['warn', 'never'],
     'comma-spacing': [
       'warn', {
         'before': false,
@@ -90,7 +91,7 @@ module.exports = {
         alignAttributesVertically: true,
         baseIndent: 0
       }
-    ],
+    ]
 
     // 'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     // 'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'

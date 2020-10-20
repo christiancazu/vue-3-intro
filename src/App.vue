@@ -4,7 +4,7 @@
 
   <!-- <RouterLink to="/">Home</RouterLink> |
   <RouterLink to="/about">About</RouterLink> -->
-  <RouterView/>
+  <RouterView />
 </main>
 </template>
 
@@ -12,12 +12,11 @@
 main {
   font-size: 2rem;
   min-height: 100vh;
-  background-color: whitesmoke;
 }
 
 .text-title {
   text-decoration: underline;
-  color: green;
+  color: greenyellow;
   font-weight: bold;
 }
 </style>
