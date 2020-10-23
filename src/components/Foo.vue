@@ -17,8 +17,14 @@
 <script>
 export default {
   async setup () {
-    return {
+    const data = await new Promise((res, rej) => {
+      setTimeout(() => {
+        res()
+      }, 3000)
+    })
 
+    return {
+      data
     }
   }
 }
