@@ -17,16 +17,19 @@
 import { ref, computed } from 'vue'
 
 const size = ref(10)
+const color = ref('#ffffff')
 
 function modifyCSSVariables () {
   size.value++
+  color.value = '#000000'.replace(/0/g, () => (~~(Math.random() * 16)).toString(16))
 }
 
 const computedSize = computed(() => size.value + 'px')
 
 export {
   modifyCSSVariables,
-  computedSize
+  computedSize,
+  color
 }
 /**
  * multiple nodes
@@ -34,8 +37,9 @@ export {
  */
 </script>
 
-<style vars="{ computedSize }">
+<style vars="{ computedSize, color }">
 .my-text {
  font-size: var(--computedSize);
+ color: var(--color);
 }
 </style>
