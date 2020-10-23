@@ -1,6 +1,6 @@
 <template>
 <section class="p-4">
-  <h4 class="h4 text-center">Vue 3</h4>
+  <h4 class="h4 text-center">Vue 3 - Multiple v-model</h4>
 </section>
 </template>
 
@@ -8,7 +8,7 @@
 
 
 /**
- * multiple nodes
+ * multiple v-model
  */
 </script>
 
