@@ -1,14 +1,21 @@
 <template>
 <section class="p-4">
-  <h4 class="h4 text-center">Vue 3</h4>
+  <h4 class="h4 text-center">Vue 3 - Suspense</h4>
+
+  <!-- <Suspense /> -->
 </section>
 </template>
 
-<script setup>
+<script>
+export default {
+  setup () {
 
+  }
+}
 
 /**
- * multiple nodes
+ * suspense
+ * defineAsyncComponent(function & object syntax)
  */
 </script>
 
